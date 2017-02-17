@@ -7,13 +7,20 @@
   <div class="card">
     <p><%= review.comment %></p>
     <p><%= review.user.name %></p>
-    <%= link_to "Delete Review", product_review_path(@product, review), data: {confirm: "Delete User's Review?", method: "delete"} %>
+
+    <% if current_user.admin %>
+      <%= link_to "Delete Review", product_review_path(@product, review), data: {confirm: "Delete User's Review?", method: "delete"} %>
+    <% end %>
+
   </div>
 <% end %>
 <br>
-<%= link_to "Add Review", new_product_review_path(@product) %> |
-<%= link_to "Edit", edit_product_path(@product) %> |
-<%= link_to "Delete", product_path(@product), :data => {:confirm => "Delete Shoe?", method: "delete"} %>
+
+<%= link_to "Add Review", new_product_review_path(@product) %>
+<% if current_user.admin %>
+  | <%= link_to "Edit", edit_product_path(@product) %> |
+  <%= link_to "Delete", product_path(@product), :data => {:confirm => "Delete Shoe?", method: "delete"} %>
+<% end %>
 <br>
 <br>
 <button type="button" class="btn black">Add to Cart</button>

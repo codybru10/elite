@@ -1,3 +1,9 @@
-<h1>Add New Shoe</h1>
+<% if current_user.admin? %>
 
-<%= render "form" %>
+  <h1>Add New Shoe</h1>
+
+  <%= render "form" %>
+
+<% else %>
+  <h3>You must be an admin to add new shoe.</h3>
+<% end %>
