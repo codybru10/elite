@@ -1,1 +1,12 @@
 <h1>You made it to the products page!</h1>
+
+<% @products.each do |product| %>
+  <div class="card">
+    <%= image_tag product.image %>
+    <br>
+    <p>$<%= product.price %></p>
+  </div>
+<% end %>
+
+
+<%= link_to "Add New Shoe", new_product_path %>

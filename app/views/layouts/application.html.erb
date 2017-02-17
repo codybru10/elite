@@ -15,7 +15,7 @@
         <a href="/" class="brand-logo">Elite</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <% if user_signed_in? %>
-            <strong><%= current_user.email %></strong>
+            <strong><%= current_user.name %></strong>
             <li><%= link_to "Shoes", products_path, :class => 'navbar-link'  %></li>
             <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
            <% else %>
