@@ -11,6 +11,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'materialize-sass'
+gem "paperclip", "~> 5.0.0"
+gem 'simple_form'
 
 
 group :development, :test do
