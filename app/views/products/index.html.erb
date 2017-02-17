@@ -1,8 +1,8 @@
 <h1>You made it to the products page!</h1>
 
 <% @products.each do |product| %>
-  <div class="card">
-    <%= image_tag product.image %>
+  <div class="">
+    <%= link_to image_tag(product.image), product_path(product) %>
     <br>
     <p>$<%= product.price %></p>
   </div>

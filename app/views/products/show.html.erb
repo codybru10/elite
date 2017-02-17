@@ -2,3 +2,15 @@
 <h4><%= @product.description %> </h4>
 <%= image_tag @product.image %>
 <h6>$<%= @product.price %> </h6>
+<h6>Reviews</h6>
+<% @product.reviews.each do |review| %>
+  <div class="card">
+    <p><%= review.comment %></p>
+    <p><%= review.user.name %></p>
+  </div>
+<% end %>
+<br>
+<%= link_to "Add Review", new_product_review_path(@product) %>
+<br>
+<br>
+<button type="button" class="btn black">Add to Cart</button>
