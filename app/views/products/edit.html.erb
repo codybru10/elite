@@ -1,6 +1,6 @@
 <% if current_user.admin %>
   <h1>Edit <%= @product.name %> </h1>
-  <%= render "form" %>
+  <%= render "form_edit" %>
 <% else %>
   <h3>You do not have permission to edit shoe</h3>
 <% end %>
