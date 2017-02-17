@@ -1,6 +1,6 @@
 <h1><%= @product.name %> </h1>
 <%= image_tag @product.image(:medium) %>
-<div class="card">
+<div class="card grey lighten-4">
   <h5><%= @product.description %> </h5>
   <h4>$<%= @product.price %> </h4>
 </div>
@@ -23,6 +23,6 @@
 
 
 <% if current_user.admin %>
-  | <%= link_to "Edit", edit_product_path(@product) %> |
+  <%= link_to "Edit", edit_product_path(@product) %> |
   <%= link_to "Delete", product_path(@product), :data => {:confirm => "Delete Shoe?", method: "delete"} %>
 <% end %>
