@@ -1,9 +1,5 @@
 <%= render "layouts/errors", :object => @product %>
 
-<%= form_for @product do |f| %>
-<% end %>
-
-<br>
 
 <%= simple_form_for @product, url: products_path do |f| %>
   <%= f.label :name %>
