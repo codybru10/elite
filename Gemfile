@@ -13,6 +13,7 @@ gem 'devise'
 gem 'materialize-sass'
 gem "paperclip", "~> 5.0.0"
 gem 'simple_form'
+gem 'aws-sdk', '~> 2.3'
 
 
 group :development, :test do
