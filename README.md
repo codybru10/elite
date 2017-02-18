@@ -20,6 +20,8 @@ $ rails server
 Go to localhost:3000 in your browser to view
 ```
 
+_OR visit: https://protected-brook-56836.herokuapp.com_
+
 ## Support and contact details
 
 _Contact me Github at codybru10 or cody.brubaker@gmail.com_
@@ -36,4 +38,4 @@ _Contact me Github at codybru10 or cody.brubaker@gmail.com_
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2016 **_Cody Brubaker**
+Copyright (c) 2016 **Cody Brubaker**
