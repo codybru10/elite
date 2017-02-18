@@ -6,6 +6,6 @@ describe 'see all shoes process' do
     login_as(admin, :scope => :user)
     visit root_path
     click_link 'Shoes'
-    expect(page).to have_content 'You made it to the products page'
+    expect(page).to have_content 'All Shoes'
   end
 end
